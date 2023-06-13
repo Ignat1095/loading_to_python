@@ -4,7 +4,7 @@
 from math import pi
 from decimal import Decimal, getcontext
 
-getcontext().prec = 1000  # Округление до 42
+getcontext().prec = 100  # Округление до 42
 
 
 def circle(diameter):
@@ -15,5 +15,5 @@ def circle(diameter):
 
 
 print(len(str(pi)))
-# diameter = int(input("Введите диаметр: "))
-circle(12.123459876)
+diameter = int(input("Введите диаметр: "))
+circle(diameter)

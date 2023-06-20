@@ -4,10 +4,12 @@
 from random import randint
 
 print('Ваш вариант')
+
 print(my_list := [randint(1, 15) for i in range(10)])
 print([item for item in set(my_list) if my_list.count(item) > 1])
 
 print('\nМой вариант')
+
 # my_list = [randint(1, 15) for i in range(10)]
 print(my_list)
 

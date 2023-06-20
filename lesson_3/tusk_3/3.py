@@ -27,8 +27,6 @@ def counter(word_list: list[str]) -> dict[str, int]:
 
 
 def words_counter(count_dict: dict[str, int], top: int) -> str:
-
-
     top_words = sorted(list(count_dict.items()), key=lambda x: x[1], reverse=True)[:top]
     words = [len(x[0]) for x in top_words]
     max_length = max(words)

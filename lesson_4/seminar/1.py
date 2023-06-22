@@ -5,13 +5,17 @@
 # ✔Текст выравнивается по правому краю так, чтобы у самого длинного слова был один пробел между ним и номером строки.
 
 
-text = "У нас все хорошо. А будет еще лучшееее!"
+text = "Арбуз Напишите функцию, которая принимает строку текста."
 
-def every_word(text: str):
-    text = text.lower().split()
-    max_ = len(max(text, key=len))
-    text.sort()
-    for i, el in enumerate(text, 1):
-        print(f"{i} {el:>{max_}}")
 
-every_word(text)
+def sort_text(text: str):
+    text_list = text.lower().replace(',', '').replace('.', '').split()
+    text_list.sort(key=len, reverse=True)
+    max_len = len(max(text_list, key=len))
+    for i, el in enumerate(text_list, 1):
+        print(f'{i:>2}. {el:.>{max_len}}')
+
+sort_text(text)
+
+
+

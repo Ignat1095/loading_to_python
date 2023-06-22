@@ -34,7 +34,7 @@ def sorted_weight(weight_item: list[str, float], weight_limit: int) -> str:
 
 print(sorted_weight(best_value(item_dict), capacity))
 
-print("\nДалее решение Препода\n")
+print("\nДалее решение преподавателя\n")
 
 
 def max_cargo(inventory: dict[str, float], weight_limit: int) -> str:

@@ -20,3 +20,5 @@ elif not text.islower():
 else:
     print("Введен текст в нижнем регистре: ")
 
+
+

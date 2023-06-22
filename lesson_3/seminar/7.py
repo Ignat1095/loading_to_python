@@ -11,10 +11,10 @@ my_dict1 = {}
 print()
 for i in sorted(set(text)):
     my_dict1[i] = text.count(i)
-print('my_dict1 = ', my_dict1)
+print('my_dict.count = ', my_dict1)
 
 
 my_dict2 = {}
-for i in text:
+for i in sorted(text):
     my_dict2[i] = my_dict2.get(i, 0) + 1
-print('my_dict2 = ', my_dict2)
+print('my_dict.get   = ', my_dict2)

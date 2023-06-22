@@ -36,6 +36,7 @@ print(sorted_weight(best_value(item_dict), capacity))
 
 print("\nДалее решение Препода\n")
 
+
 def max_cargo(inventory: dict[str, float], weight_limit: int) -> str:
     backpack = [[], 0]
     for item, weight in inventory.items():

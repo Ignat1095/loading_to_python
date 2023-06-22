@@ -13,6 +13,7 @@ friends_dict = {"Антон": ["спальник", "палатка", "лопат
                 "Петя": ["спальник", "шашлык", "решетка"]}
 
 
+
 def all_items(f_dict) -> dict:
     items_dict = {}
     all_item = sum(f_dict.values(), [])
@@ -37,9 +38,9 @@ def unique_one(inventory: dict[str, list]) -> str:
 def all_except_one(inventory: dict[str, list]) -> str:
     result = {}
     all_item = set(all_items(friends_dict).keys())
-    print(all_item)
+    # print(all_item)
     for name, items in inventory.items():
-        cur_inventory = all_item
+        cur_inventory = all_item.copy()
         for cur_name, cur_items in inventory.items():
             if name != cur_name:
                 cur_inventory.intersection_update(set(cur_items))

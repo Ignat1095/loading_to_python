@@ -13,7 +13,6 @@ friends_dict = {"Антон": ["спальник", "палатка", "лопат
                 "Петя": ["спальник", "шашлык", "решетка"]}
 
 
-
 def all_items(f_dict) -> dict:
     items_dict = {}
     all_item = sum(f_dict.values(), [])

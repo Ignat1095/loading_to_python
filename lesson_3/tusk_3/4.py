@@ -71,6 +71,3 @@ def all_options(inventory: dict[str, float], weight_limit: int):
 # print(all_options(item_dict, capacity))
 for option in all_options(item_dict, capacity):
     print(option)
-
-
-

@@ -1,8 +1,11 @@
 # 1) ✔Напишите функцию для транспонирования матрицы
 
 
-matrix_list = [[1, 2], [3, 4], [5, 6]]
-print(matrix_list)
+matrix_1 = [[1, 2], [3, 4], [5, 6]]
+matrix_2 = [[1, 2, 3, ], [3, 4, 5], [6, 7, 8]]
+matrix_3 = [[1, 2, 3], [4, 5, 6]]
+
+list_matrix = [matrix_1, matrix_2, matrix_3]
 
 
 def nested_loop(matrix):
@@ -16,4 +19,20 @@ def nested_loop(matrix):
 
     return trans_matrix
 
-print(nested_loop(matrix_list))
+
+# print(nested_loop(matrix_2))
+
+# Красивое и простое решение
+def print_matrix(matrix: list[[int]]):
+    for row in matrix:
+        print(*row, sep='\t')
+
+
+def troanposition(matrix: list[[int]]):
+    return list(zip(*matrix))
+
+for matrix in list_matrix:
+    print_matrix(matrix)
+    print()
+    print_matrix((troanposition(matrix)))
+    print("="*10 + '\n')

@@ -36,7 +36,7 @@ def withdraw(summa: float = 0):  # Операция снятия
     # sleep(1)
     print(f'Вам доступно: {summa}\n')
     # sleep(1)
-    choose_a_sum = round_summ(float(input("Введите сумму снятия наличных, кратную {50} или \n"
+    choose_a_sum = round_summ(float(input("Введите сумму снятия, кратную {50} или \n"
                                           "для отмены операции введите ноль {0}: ")))
     if choose_a_sum == 0:
         return summa
@@ -57,12 +57,12 @@ def enter(summa: int = 0):
 
 
 def choice_selection(summa: float = 0, count=[]):
-    print('cmd) =', count)
+    # print('cmd =', count)
     if len(count) >= 3:
         count.clear()
-        bonus = 0.03
-        summa += summa * bonus
-        print(f"Вам начислен бонус в 3% = {summa * bonus}!!!")
+        bonus = round(0.03 * summa, 2)
+        summa += bonus
+        print(f"Вам начислен бонус в 3% = {bonus}!!!")
         print(f'\nДоступно средств: {summa}\n')
     cmd = (input('Выберите действие:\n'
                  '1 - Снять\n'
@@ -93,7 +93,9 @@ def choice_selection(summa: float = 0, count=[]):
             return choice_selection(summa)
 
         elif int(cmd) == 0:
+            print("Exit. Good bye!")
             return False
 
-
+print("Банкомат 2000")
+print()
 choice_selection(2000)

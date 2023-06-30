@@ -10,7 +10,7 @@ def profit(my_dict: dict[str:[list]]) -> bool:
     # #         return False
     # #     else:
     # #         return True
-    if all(map(lambda x: sum(x) > 0, my_dict.values())):
+    if all(map(lambda x: sum(x) >= 0, my_dict.values())):
         return True
     else:
         return False
@@ -22,5 +22,3 @@ my_dict = {"Asus": [100, -200],
 
 
 print(profit(my_dict))
-# a = [100, -200]
-# print(sum(a))

@@ -10,6 +10,6 @@ def unicode_sort(text):
     for i in text:
         text_sort.append(ord(i))
 
-    print(text_sort)
+    return sorted(text_sort)
 
-unicode_sort(text)
+print(unicode_sort(text))

@@ -24,7 +24,7 @@
 # [(0, 0), (6, 1), (4, 2), (7, 3),
 # (1, 4), (3, 5), (5, 6), (2, 7)]
 
-queens_count = 2
+queens_count = 8
 
 
 def queens_place(n=8):

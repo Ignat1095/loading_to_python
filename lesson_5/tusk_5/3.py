@@ -11,11 +11,11 @@ bonus = ["10.25%", "10.25%", "10.25%"]
 
 
 my_dict = {y: x for y in name
-           for x in list(map(lambda x, y: x*float(y.replace("%", "")), rate, bonus))}
+           for x in list(map(lambda x, y: x*float(y.replace("%", ""))*0.01, rate, bonus))}
 print(my_dict)
 
 # Помогите решить ошибку: в генераторе значение "х" почему-то принимает последнее значение в анонимной функции.
 # Ниже проверку делал, в ней все в порядке
 
-a = list(map(lambda x, y: x*float(y.replace("%", "")), rate, bonus))
-print(a)
+a = list(map(lambda x, y: x*float(y.replace("%", ""))*0.01, rate, bonus))
+# print(a)

@@ -13,15 +13,26 @@ def func(file_1, file_2, file_3):
     with (
         open(file_1, 'r', encoding="UTF-8") as file1,
         open(file_2, 'r', encoding="UTF-8") as file2,
-        open(file_3, 'r', encoding="UTF-8") as file3
+        open(file_3, 'a', encoding="UTF-8") as file3
     ):
-        a = (file1, file2)
+        numbers = file1.read().split('\n')
+        names = file2.read().split('\n')
 
-        for i, name in a:
-            a, b = map(float, i.strip().split("|"))
-            result = a * b
-            if result < 0:
-                print(f'{result} {name}')
+        if len(numbers) > len(names):
+            names += names[:len(numbers)-len(names)]
+        else:
+            numbers += numbers[:len(names)-len(numbers)]
+
+        for name, number in zip(names, numbers):
+            if not name or not number:
+                continue
+            num_1, num_2 = map(float, number.split('|'))
+            mult = num_1 * num_2
+            if mult < 0:
+                file3.write(f'{name.lower()} {abs(mult)}\n')
             else:
-                print(result, name)
+                file3.write(f'{name.upper()} {round(mult)}\n')
+
+
+func("txt_1.txt", "txt_2.txt", "txt_3.txt")
 

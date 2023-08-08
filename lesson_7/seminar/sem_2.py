@@ -12,7 +12,7 @@ def fill_file(file, count_lines):
     aei = ['a', 'e', 'i', 'o', 'u', 'y']
 
     with open(file, 'a', encoding='UTF-8') as file:
-        for i in range(count_lines):
+        for _ in range(count_lines):
             length = random.randint(4, 7)
             name = ""
             for letter in range(length):

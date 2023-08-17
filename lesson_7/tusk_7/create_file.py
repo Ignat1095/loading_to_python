@@ -1,6 +1,7 @@
-
 from random import randint, choice
 from os import getcwd, listdir, mkdir
+
+__all__ = ['give_name', 'create_file']
 
 
 def give_name(min_size, max_size) -> str:
@@ -19,9 +20,9 @@ def give_name(min_size, max_size) -> str:
 
 
 def create_file(ext: str, directory: str = None,
-               min_name: int = 5, max_name: int = 10,
-               min_size: int = 256, max_size: int = 4096,
-               count_files: int = 42):
+                min_name: int = 5, max_name: int = 10,
+                min_size: int = 256, max_size: int = 4096,
+                count_files: int = 42):
     if not directory:
         directory = getcwd() + '\\'
     else:
@@ -34,6 +35,7 @@ def create_file(ext: str, directory: str = None,
             list_of_bytes = bytes([randint(0, 255) for i in range(min_size,
                                                                   max_size)])
             file.write(str(list_of_bytes))
+
 
 if __name__ == "__main__":
     extension = ('.txt', '.doc', '.pdf', '.json', '.csv')

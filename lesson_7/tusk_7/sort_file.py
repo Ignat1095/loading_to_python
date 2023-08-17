@@ -2,6 +2,7 @@
 from os import chdir, listdir, mkdir, getcwd
 from pathlib import Path
 
+__all__ = ['sort_files']
 
 def sort_files(directory: str | Path = "test_dir"):
     chdir(directory)
@@ -14,3 +15,7 @@ def sort_files(directory: str | Path = "test_dir"):
         file.replace(f'{ext.upper()}\\{file.name}')
 
 sort_files()
+
+
+if __name__ == '__main__':
+    sort_files()

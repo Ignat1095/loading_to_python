@@ -21,6 +21,9 @@ from os import chdir, getcwd, listdir, mkdir
 from pathlib import Path
 
 
+__all__ = ['refactor_file']
+
+
 def refactor_file(new_name: str,
                   old_ext: str, new_ext: str = None,
                   count_digits: int = 3,
@@ -45,3 +48,8 @@ def refactor_file(new_name: str,
 
 
 refactor_file("_видео", old_ext=".txt", new_ext=".jpg")
+
+
+if __name__ == '__main__':
+    refactor_file("_видео", old_ext=".txt", new_ext=".jpg")
+    

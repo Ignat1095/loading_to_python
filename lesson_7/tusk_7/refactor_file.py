@@ -12,6 +12,10 @@
 
 # К ним прибавляется желаемое конечное имя, если оно передано.
 # Далее счётчик файлов и расширение.
+#
+# Пример:
+# rename(wanted_name = "video", count_nums=3, extension_old=".txt", extension_new=".csv", diapazon=[3, 6])
+# foto_2002.txt -> o_20video001.csv
 
 from os import chdir, getcwd, listdir, mkdir
 from pathlib import Path
@@ -40,4 +44,4 @@ def refactor_file(new_name: str,
         print(f"Файлов с расширением {{old_ext}} не существует!")
 
 
-refactor_file("_new", old_ext=".txt", new_ext=".jpg")
+refactor_file("_видео", old_ext=".txt", new_ext=".jpg")

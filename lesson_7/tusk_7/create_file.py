@@ -37,4 +37,4 @@ def create_file(ext: str, directory: str = None,
 
 if __name__ == "__main__":
     extension = ('.txt', '.doc', '.pdf', '.json', '.csv')
-    create_file(ext=choice(extension), directory="test_dir", count_files=5)
+    create_file(ext=choice(extension), directory="test_dir", count_files=3)

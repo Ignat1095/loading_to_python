@@ -1,0 +1,17 @@
+parent,name,type,size
+seminar,ex_2.csv,file,105
+seminar,ex_2.json,file,307
+seminar,ex_2.py,file,1711
+seminar,ex_3.py,file,907
+seminar,ex_4.json,file,823
+seminar,ex_4.py,file,1458
+seminar,Readme.md,file,3365
+lesson_8,seminar,folder,8676
+ex_1,ex_1.py,file,1018
+ex_1,ex_1_txt.txt,file,93
+ex_1,new_file.json,file,228
+seminar,ex_1,folder,1339
+ex_5,ex_2.pickle,file,160
+ex_5,ex_4.pickle,file,325
+ex_5,ex_5.py,file,784
+seminar,ex_5,folder,1269

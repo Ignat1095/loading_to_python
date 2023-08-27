@@ -1,0 +1,98 @@
+[
+    {
+        "parent": "seminar",
+        "name": "ex_2.csv",
+        "type": "file",
+        "size": 105
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_2.json",
+        "type": "file",
+        "size": 307
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_2.py",
+        "type": "file",
+        "size": 1711
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_3.py",
+        "type": "file",
+        "size": 907
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_4.json",
+        "type": "file",
+        "size": 823
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_4.py",
+        "type": "file",
+        "size": 1458
+    },
+    {
+        "parent": "seminar",
+        "name": "Readme.md",
+        "type": "file",
+        "size": 3365
+    },
+    {
+        "parent": "lesson_8",
+        "name": "seminar",
+        "type": "folder",
+        "size": 8676
+    },
+    {
+        "parent": "ex_1",
+        "name": "ex_1.py",
+        "type": "file",
+        "size": 1018
+    },
+    {
+        "parent": "ex_1",
+        "name": "ex_1_txt.txt",
+        "type": "file",
+        "size": 93
+    },
+    {
+        "parent": "ex_1",
+        "name": "new_file.json",
+        "type": "file",
+        "size": 228
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_1",
+        "type": "folder",
+        "size": 1339
+    },
+    {
+        "parent": "ex_5",
+        "name": "ex_2.pickle",
+        "type": "file",
+        "size": 160
+    },
+    {
+        "parent": "ex_5",
+        "name": "ex_4.pickle",
+        "type": "file",
+        "size": 325
+    },
+    {
+        "parent": "ex_5",
+        "name": "ex_5.py",
+        "type": "file",
+        "size": 784
+    },
+    {
+        "parent": "seminar",
+        "name": "ex_5",
+        "type": "folder",
+        "size": 1269
+    }
+]

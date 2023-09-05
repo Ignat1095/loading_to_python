@@ -13,5 +13,11 @@ ex_1,new_file.json,file,228
 seminar,ex_1,folder,1339
 ex_5,ex_2.pickle,file,160
 ex_5,ex_4.pickle,file,325
-ex_5,ex_5.py,file,784
-seminar,ex_5,folder,1269
+ex_5,ex_5.py,file,982
+seminar,ex_5,folder,1467
+__pycache__,ex_5.cpython-310.pyc,file,957
+ex_5,__pycache__,folder,957
+__pycache__,ex_2.cpython-310.pyc,file,1181
+__pycache__,ex_3.cpython-310.pyc,file,875
+__pycache__,ex_4.cpython-310.pyc,file,822
+seminar,__pycache__,folder,2878

@@ -14,7 +14,7 @@ def json_to_csv(file_json: str, file_csv: str):
             rows.append({"level": level,
                          "id": id,
                          "name": name})
-
+    print(rows)
     with open(file_csv, "w", encoding="utf-8", newline="") as csv_file:
         filenames = ["level", "id", "name"]
 
@@ -25,4 +25,4 @@ def json_to_csv(file_json: str, file_csv: str):
 
 
 if __name__ == "__main__":
-    json_to_csv("ex_2.json", "ex_2.csv")
+    json_to_csv("ex_2.json", "ex_3.csv")

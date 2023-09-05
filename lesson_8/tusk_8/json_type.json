@@ -87,12 +87,48 @@
         "parent": "ex_5",
         "name": "ex_5.py",
         "type": "file",
-        "size": 784
+        "size": 982
     },
     {
         "parent": "seminar",
         "name": "ex_5",
         "type": "folder",
-        "size": 1269
+        "size": 1467
+    },
+    {
+        "parent": "__pycache__",
+        "name": "ex_5.cpython-310.pyc",
+        "type": "file",
+        "size": 957
+    },
+    {
+        "parent": "ex_5",
+        "name": "__pycache__",
+        "type": "folder",
+        "size": 957
+    },
+    {
+        "parent": "__pycache__",
+        "name": "ex_2.cpython-310.pyc",
+        "type": "file",
+        "size": 1181
+    },
+    {
+        "parent": "__pycache__",
+        "name": "ex_3.cpython-310.pyc",
+        "type": "file",
+        "size": 875
+    },
+    {
+        "parent": "__pycache__",
+        "name": "ex_4.cpython-310.pyc",
+        "type": "file",
+        "size": 822
+    },
+    {
+        "parent": "seminar",
+        "name": "__pycache__",
+        "type": "folder",
+        "size": 2878
     }
 ]

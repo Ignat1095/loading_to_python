@@ -12,7 +12,7 @@ def json_roots(func: callable):
         for item in data_list:
             for key, value in item.items():
                 data[key] = value
-        with open("ex_2.json", "w") as j_file:
+        with open("ex_4.json", "w") as j_file:
             json.dump(data, j_file, indent=4)
         return data_list
     return wrapper

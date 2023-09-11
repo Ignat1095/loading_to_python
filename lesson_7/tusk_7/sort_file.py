@@ -4,6 +4,7 @@ from pathlib import Path
 
 __all__ = ['sort_files']
 
+
 def sort_files(directory: str | Path = "test_dir"):
     chdir(directory)
     for file in Path(getcwd()).iterdir():

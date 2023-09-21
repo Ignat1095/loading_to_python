@@ -57,4 +57,3 @@ if __name__ == "__main__":
     f1.width = 4
     f1.width = 4
     print(f1.square())
-

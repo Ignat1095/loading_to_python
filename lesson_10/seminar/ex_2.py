@@ -14,6 +14,9 @@ class Rectangle:
         else:
             self.width = length
 
+    def __eq__(self, other):
+        return self.perimetr() == other.perimetr()
+
     def perimetr(self):
         return (self.length + self.width) * 2
 

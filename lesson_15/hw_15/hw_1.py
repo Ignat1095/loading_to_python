@@ -94,3 +94,6 @@ with open("user_support_letters.csv", "r", encoding="utf-8") as f:
         data.append([num, row])
 
 sorter(data, SECTIONS)
+
+if __name__ == '__main__':
+    sorter(data, SECTIONS)

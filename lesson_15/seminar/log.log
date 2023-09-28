@@ -1,0 +1,6 @@
+ERROR:root:b = 0
+ERROR:root:Функция div с аргументами args = (2, 0), kwargs = {} выдавала ошибку: e = ZeroDivisionError('division by zero')
+ERROR    - 2023-09-26 22:29:53,112.В модуле "root"в строке 034 функция "wrapper()"в 1695756593.1127598 секунд записала сообщение:Функция div с аргументами args = (2, 0), kwargs = {} выдавала ошибку: e = ZeroDivisionError('division by zero')
+ERROR    - 2023-09-26 22:33:11,787.В модуле "root"в строке 034 функция" в 1695756791.7875326 секунд записала сообщение:Функция div с аргументами args = (2, 0), kwargs = {} выдавала ошибку: e = ZeroDivisionError('division by zero')
+ERROR    - 2023-09-26 22:33:47,124.В модуле "root"в строке 034 функция "wrapper()"в 1695756827.12487 секунд записала сообщение:Функция div с аргументами args = (2, 0), kwargs = {} выдавала ошибку: e = ZeroDivisionError('division by zero')
+ERROR:root:Функция create_date с аргументами args = ('9-й четверг ноября',), kwargs = {} выдавала ошибку: e = ValueError()
